@@ -12,8 +12,8 @@ services:
     volumes:
       - /var/lib/docker/volumes/obsidian:/config #Create a folder on your local storage to sync with obsidian and this will store your data
     ports:
-      - 3000:3000 #Internal port expose for internal communication
-      - 3001:3001 #External port expose for web UI
+      - 3000:3000 #External port expose for web UI
+      - 3001:3001 #Internal port expose for internal communication
     #devices:
     # - /dev/dri:/dev/dri #optional
     shm_size: "1gb"
