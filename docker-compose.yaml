@@ -6,8 +6,8 @@ services:
     security_opt:
       - seccomp:unconfined #optional
     environment:
-      - PUID=0 #It depends (example: PUID=1000)
-      - PGID=0 #It depends (example: PGID=1000)
+      - PUID=1000 #It depends - Check by id 
+      - PGID=1000 #It depends - Check by id -u
       - TZ=Asia/Dhaka
     volumes:
       - /var/lib/docker/volumes/obsidian:/config #Create a folder on your local storage to sync with obsidian and this will store your data
